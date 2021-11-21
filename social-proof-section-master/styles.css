@@ -33,12 +33,13 @@ body{
 
 .service h1{
     text-align: center;
+    line-height: 2rem;
     color: var(--Very-Dark-Magenta);
     font-weight: 700;
 }
 
 .service p{
-    text-align: center;
+    text-align: justify;
     font-weight: 500;
     color: var(--Dark-Grayish-Magenta);
     line-height: 1.3rem;
@@ -56,9 +57,18 @@ body{
     font-weight: 700;
 }
 
+.stars img{
+    margin: 0 5px;
+}
+
+.profiles{
+    display: flex;
+    flex-direction: column;
+}
+
 .card{
     background-color: var(--Very-Dark-Magenta);
-    height: 250px;
+    height: 300px;
     border-radius: 10px;
     padding: 20px 30px;
     margin: 20px 0;
@@ -101,16 +111,102 @@ body{
 
 
 @media only screen and (min-width: 768px) {
+   
     .part_1{
         display: flex;
+        justify-content: space-around;
+        margin: 50px 0;
     }
+
+
     .profiles{
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 450px;
+        
     }
-    .service{
-        margin:auto;
+
+
+    .card{
+        margin: 0 13px;
+        height: 370px;
+
+    }
+    .colton{
+        margin-top: 1em;
+        align-self: flex-start;
+    }
+    .irene{
+        margin-top: 1em;
+        align-self: center;
+    }
+    .anne{
+         margin-top: 1em;
+        align-self: flex-end;
     }
     
+    .service{
+         
+         margin-left:  100px;
+    }
+
+    .service h1{
+        text-align: left;
+        font-size: 2rem;
+        width: 300px;
+    }
+
+    .service p{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    .rated{
+        display: flex;
+        flex-flow: column wrap;
+        margin-right: 80px;
+    
+    }
+
+    
+
+    .stars{
+        display: flex;
+        padding: 10px;
+        margin: 10px;
+        width: 360px;
+        
+    }
+    .stars img{
+        margin: 0 3px;
+        width: 10px;
+        height: 18px;
+        
+    }
+
+    .stars p{
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    .stars_left {
+        align-self: flex-start;
+    }
+
+    .stars_center{
+        align-self: center;
+        
+    }
+    
+    .stars_right{
+        align-self: flex-end;
+        
+    } 
+
+
+   
+   
       
 
 
